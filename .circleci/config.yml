@@ -27,7 +27,7 @@ jobs:
           name: Build
           command: mvn -B -DskipTests clean package
       - store_artifacts:
-          path: target/*.hpi
+          path: target/keycloak.hpi
 
 # Invoke jobs via workflows
 # See: https://circleci.com/docs/2.0/configuration-reference/#workflows
