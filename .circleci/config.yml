@@ -20,6 +20,10 @@ jobs:
       - checkout
       # Use mvn clean and package as the standard maven build phase
       - run:
+          name: View effective POM 
+          command: mvn help:effective-pom
+      # Use mvn clean and package as the standard maven build phase
+      - run:
           name: Build
           command: mvn -X -B -DskipTests clean package
 
